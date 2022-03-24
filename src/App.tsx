@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from "./atoms/Container";
+import Resume from "./organisms/Resume";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container Component="section">
+      <Resume rate={10} rent={100} total={150000} />
+
+      <footer>
+        <Resume.Total total={150000} />
+      </footer>
+    </Container>
   );
-}
+};
 
 export default App;

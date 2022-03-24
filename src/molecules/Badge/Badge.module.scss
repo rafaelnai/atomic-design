@@ -1,0 +1,20 @@
+.chip {
+  border-radius: 16px;
+  padding: 8px;
+  display: inline-block;
+}
+
+.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.secondary {
+  background-color: #8dc647;
+  color: #000;
+}
+
+.default {
+  background-color: #6c757d;
+  color: #fff;
+}
